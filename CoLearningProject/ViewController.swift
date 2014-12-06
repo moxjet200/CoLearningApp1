@@ -13,6 +13,14 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        var label = UILabel()
+        label.text = "cool new feature"
+        label.frame = CGRectMake(0, 0, 200, 200)
+        label.font = UIFont(name: "Helvetica", size: 40)
+        label.backgroundColor = UIColor.lightGrayColor()
+        self.view .addSubview(label)
+        
     }
 
     override func didReceiveMemoryWarning() {
